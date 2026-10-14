@@ -1,0 +1,31 @@
+# Core training and codec stack. Pin exact platform-specific builds in the
+# release lock file after the final GPU integration run.
+torch>=2.1
+torchvision>=0.16
+compressai>=1.2.4
+diffusers>=0.25
+transformers>=4.36
+accelerate>=0.25
+peft>=0.7
+xformers>=0.0.23
+safetensors>=0.4
+
+# Losses, data handling, and manuscript evaluation.
+lpips>=0.1.4
+h5py>=3.9
+numpy>=1.24,<2
+Pillow>=10
+opencv-python>=4.8
+tqdm>=4.66
+ultralytics>=8.2
+timm>=0.9
+einops>=0.7
+huggingface-hub>=0.20
+pyiqa>=0.1.10
+torchmetrics>=1.3
+PyYAML>=6
+requests>=2.31
+
+# Needed by the SUIM Keras evaluator.
+tensorflow>=2.15
+
